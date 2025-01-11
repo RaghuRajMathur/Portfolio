@@ -1,3 +1,17 @@
+//disabling right click and F12
+document.addEventListener('contextmenu', (e) =>{
+  //disable control
+  e.preventDefault()
+  return false
+})
+
+document.addEventListener('keydown', (e)=>{
+  if (e.ctrlKey || e.keyCode == 123){
+    e.stopPropagation()
+    e.preventDefault()
+  }
+})
+
 $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script
@@ -71,3 +85,5 @@ $(document).ready(function () {
     },
   });
 });
+
+
