@@ -692,3 +692,92 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+/* Relevant Experience and Projects: Background Image */
+.projects, .experience {
+    background-image: url("images/background_image.jpg");
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.projects .title {
+    color: #f1f1f1;
+}
+.projects-content, .experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.project-item, .exp-item {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.project-item:hover, .exp-item:hover {
+    transform: translateY(-5px);
+}
+.project-item h3, .exp-item h3 {
+    color: rgb(0, 78, 196);
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Merriweather', serif; /* Classy font for headings */
+}
+.project-item p, .exp-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Certifications: Black Background */
+.certifications {
+    background-image: url("images/background_image.jpg");
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.certifications .title {
+    color: #ffffff;
+}
+.certifications-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.cert-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+}
+.cert-item:hover {
+    transform: translateY(-5px);
+}
+.cert-item h3 {
+    color: rgb(0, 78, 196);
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.cert-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Adjust Contrast for White Background */
+body, .about, .skills, .contact {
+    color: #111; /* Dark text for visibility */
+    font-family: 'Merriweather', serif; /* Classy font for all sections */
+}
+
